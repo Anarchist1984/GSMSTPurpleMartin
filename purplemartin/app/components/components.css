@@ -1,3 +1,40 @@
-.red{
-    background-color: red;
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white; /* Default text color */
+  transition: color 0.3s ease;
+}
+
+.underline-animation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white; /* Default underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change text color to purple when scrolled */
+.bg-white .underline-animation {
+  color: #4c1d95;
+}
+
+/* Change underline color to purple when scrolled */
+.bg-white .underline-animation::before {
+  background-color: #4c1d95;
+}
+
+/* Hover styles remain the same */
+.underline-animation:hover {
+  color: #4c1d95; /* Text color on hover */
+}
+
+.underline-animation:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
