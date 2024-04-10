@@ -13,7 +13,7 @@ const SearchBar = ({ projects }) => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100 mt-20">
+    <div className="min-h-screen flex-col bg-gray-100 mt-20">
       <div className="fixed w-full z-10">
       <div className="max-w-screen-xl mx-auto px-4 py-4">
   <input
