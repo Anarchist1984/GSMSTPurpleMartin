@@ -31,7 +31,7 @@ const SearchBar = ({ projects }) => {
             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
               <div className="p-4 rounded-lg border border-gray-300">
                 <h2 className="text-xl font-semibold mb-2">
-                  <Link href={`${project.fileAddress}/${project.name}`} className="text-indigo-600 hover:underline">
+                  <Link href={`projects/id/${project.fileAddress}`} className="text-indigo-600 hover:underline">
                     {project.name}
                   </Link>
                 </h2>

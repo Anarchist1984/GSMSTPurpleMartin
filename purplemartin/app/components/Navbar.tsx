@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm`}
         style={{ height: `${navbarHeight}px` }}
@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>
         </nav>
       </header>
-    </>
+    </div>
   );
 };
 
