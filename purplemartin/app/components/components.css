@@ -18,20 +18,23 @@
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
+.underline-animation:hover {
+  color: white; /* Text color on hover */
+}
 
 /* Change text color to purple when scrolled */
-.bg-white .underline-animation {
-  color: #4c1d95;
+.bg-transparent .underline-animation {
+  color: #0f0047;
 }
 
 /* Change underline color to purple when scrolled */
-.bg-white .underline-animation::before {
-  background-color: #4c1d95;
+.bg-transparent .underline-animation::before {
+  background-color: #0f0047;
 }
 
 /* Hover styles remain the same */
-.underline-animation:hover {
-  color: #4c1d95; /* Text color on hover */
+.bg-transparent .underline-animation:hover {
+  color: #0f0047; /* Text color on hover */
 }
 
 .underline-animation:hover::before {
