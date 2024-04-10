@@ -1,8 +1,10 @@
 import Navbar from "./components/Navbar";
+import Image from "next/image";
+import HomePagePurpleMartin from '../public/HomePagePurpleMartin.png'
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-indigo-800 via-blue-700 to-purple-600 dark:bg-indigo-950">
+    <main className="bg-gradient-to-b">
       <Navbar />
       <div className="h-screen">
         <div className="bg-white rounded-lg inline-block px-6 py-10 absolute top-32 left-56">
@@ -28,12 +30,9 @@ export default function Home() {
           </h1>
         </div>
         <div>
-          <img
-            src="https://media.audubon.org/nas_birdapi_hero/h_purple-martin_006_shutterstock_texas_1220914552_adult-male_agamiphotoagency.jpg"
-            alt="Purple Martin "
-            className="w-full h-full object-cover"
-          />
+        <Image src={HomePagePurpleMartin} alt="Purple Martin"/>
         </div>
+        <div className="bg-gradient-to-b from-[#9CC6E7] to-blue-200"></div>
       </div>
     </main>
   );

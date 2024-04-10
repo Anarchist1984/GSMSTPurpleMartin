@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`bg-${scrollPosition > 0 ? "transparent" : "indigo-500"} dark:bg-indigo-900 fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm`}
+        className={`fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm`}
         style={{ height: `${navbarHeight}px` }}
       >
         <nav className="container mx-auto flex justify-between items-center h-full">
@@ -45,16 +45,16 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/research">
                 <span className="cursor-pointer underline-animation">
-                  About
+                  Research
                 </span>
               </Link>
             </li>
           </ul>
           <Link
             href="/account/signin"
-            className={`text-${scrollPosition > 0 ? "#0f0047" : "white"} hover:text-${scrollPosition > 0 ? "white" : "black"} from-indigo-400 to-indigo-600 px-4 py-2 rounded-md bg-gradient-to-r hover:from-indigo-400 hover:to-blue-700 font-bold transition duration-300`}
+            className={`text-white from-indigo-400 to-indigo-600 px-4 py-2 rounded-md bg-gradient-to-r hover:from-indigo-400 hover:to-blue-700 font-bold transition duration-300`}
           >
             Researcher Dashboard
           </Link>
