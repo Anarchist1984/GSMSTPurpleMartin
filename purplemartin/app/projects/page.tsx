@@ -69,7 +69,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <main className="fadeIn">
       <div>
         <Navbar />
       </div>

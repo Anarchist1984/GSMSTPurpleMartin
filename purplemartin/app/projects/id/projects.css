@@ -1,0 +1,43 @@
+/* styles.css */
+
+
+.H1, .H2, .H3, .H4 {
+    background: linear-gradient(to right, #3182ce, #4299e1, #63b3ed, #90cdf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700; /* font-bold */
+}
+
+.H1 {
+    font-size: 2.25rem; /* text-4xl */
+    padding: 10px;
+}
+
+.H2 {
+    font-size: 1.875rem; /* text-3xl */
+    padding: 10px;
+}
+
+.H3 {
+    font-size: 1.5rem; /* text-2xl */
+    padding: 10px;
+}
+
+.H4 {
+    font-size: 1.25rem; /* text-xl */
+    padding: 10px;
+}
+
+.P {
+    font-size: 1rem; /* text-base */
+    color: #0f141d; /* text-gray-700 */
+    line-height: 1.75; /* leading-relaxed */
+    text-indent: 2rem; /* Indent paragraphs */
+    padding: 1rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

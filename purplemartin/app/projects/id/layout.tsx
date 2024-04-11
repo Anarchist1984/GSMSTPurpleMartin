@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "@/app/components/Navbar";
 import SearchBar from "@/app/components/SearchbarShort";
+import '@/app/components/components.css';
 
 export default function ProjectsLayout({
   children, // will be a page or nested layout
@@ -71,15 +72,17 @@ export default function ProjectsLayout({
     // Add more projects here if needed
   ];
 
-  return (
-    <section className='bg-red-900 h-full'>
-      <Navbar />
-      <div className="flex">
-        <SearchBar projects={projects} />
-        <div className="pt-20 pl-72">{children}</div>
-        <div>
-        </div>
+// ...
+
+return (
+  <section className='fadeIn' style={{ backgroundImage: 'url(/ProjectsBackground.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+    <Navbar />
+    <div className="flex">
+      <SearchBar projects={projects} />
+      <div className="pt-20 pl-72">{children}</div>
+      <div>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
