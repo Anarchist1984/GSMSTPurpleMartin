@@ -47,7 +47,7 @@ const QuickLinks = ({ children }) => {
   };
 
   return (
-    <div className="fixed top-10 right-1 z-50 w-64 bg-white-50 opacity-100 border-r border-gray-300 rounded-lg shadow-lg mt-4 mr-4 overflow-hidden backdrop-blue-xl">
+    <div className="fixed top-12 right-1 z-50 w-64 bg-white-50 opacity-100 border-r border-gray-300 rounded-lg shadow-lg mt-4 mr-4 overflow-hidden backdrop-blue-xl">
       <div className="p-4 bg-gray-200 bg-opacity-50 text-lg font-semibold border-b border-gray-300">
         On This Page
       </div>

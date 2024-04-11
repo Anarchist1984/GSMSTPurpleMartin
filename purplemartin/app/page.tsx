@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Image from "next/image";
-import HomePagePurpleMartin from '../public/HomePagePurpleMartin.png'
+import HomePagePurpleMartin from "../public/HomePagePurpleMartin.png";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
           </h1>
         </div>
         <div>
-        <Image src={HomePagePurpleMartin} alt="Purple Martin"/>
+          <Image src={HomePagePurpleMartin} alt="Purple Martin" />
         </div>
         <div className="bg-gradient-to-b from-[#9CC6E7] to-blue-200"></div>
       </div>
