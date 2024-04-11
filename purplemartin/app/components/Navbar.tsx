@@ -1,23 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import "./components.css";
 
 const Navbar = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const navbarHeight = 64;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div>
@@ -25,13 +12,13 @@ const Navbar = () => {
         className={`fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm`}
         style={{ height: `${navbarHeight}px` }}
       >
-        <nav className="container mx-auto flex justify-between items-center h-full">
+        <nav className="container mx-auto flex flex-wrap justify-between items-center h-full">
           <Link href="/">
             <span className="cursor-pointer text-xl font-bold underline-animation">
               Martin's Roost
             </span>
           </Link>
-          <ul className="flex space-x-28 items-center justify-center font-semibold">
+          <ul className="flex flex-wrap justify-center space-x-4 sm:space-x-28 items-center font-semibold">
             <li>
               <Link href="/projects">
                 <span className="cursor-pointer underline-animation">
