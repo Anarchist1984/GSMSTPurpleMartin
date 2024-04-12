@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import NavbarSm from "./components/CollapsedNavbar";
 import Image from "next/image";
 import HomePagePurpleMartin from "../public/HomePagePurpleMartin.png";
 
@@ -6,8 +7,9 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-b">
       <Navbar />
+      <NavbarSm />
       <div className="h-screen">
-        <div className="bg-white rounded-lg inline-block px-6 py-10 absolute top-32 left-56">
+        <div className="bg-white rounded-lg inline-block px-6 py-10 top-15 left-56">
           <h1 className="text-5xl font-bold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
               The

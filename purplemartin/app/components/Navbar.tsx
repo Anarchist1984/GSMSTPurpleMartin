@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React from "react";
 import Link from "next/link";
 import "./components.css";
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm`}
+        className={`fixed top-0 w-full z-50 transition-all duration-1000 backdrop-blur-sm hidden md:block`}
         style={{ height: `${navbarHeight}px` }}
       >
         <nav className="container mx-auto flex flex-wrap justify-between items-center h-full">

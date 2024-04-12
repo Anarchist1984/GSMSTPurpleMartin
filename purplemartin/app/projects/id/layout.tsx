@@ -1,6 +1,8 @@
 "use client";
 import Navbar from "@/app/components/Navbar";
+import NavbarSm from "@/app/components/CollapsedNavbar";
 import SearchBar from "@/app/components/SearchbarShort";
+import SearchBarShortSm from "@/app/components/SearchbarShortSm";
 import '@/app/components/components.css';
 
 export default function ProjectsLayout({
@@ -77,8 +79,9 @@ export default function ProjectsLayout({
 return (
   <section className='fadeIn' style={{ backgroundImage: 'url(/ProjectsBackground.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
     <Navbar />
+    <NavbarSm />
     <div className="flex">
-      <SearchBar projects={projects} />
+      <SearchBarShortSm projects={projects} />
       <div className="pt-20 pl-72">{children}</div>
       <div>
       </div>

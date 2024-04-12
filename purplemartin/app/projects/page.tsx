@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/Searchbar";
+import NavbarSm from "../components/CollapsedNavbar";
 
 export default function Home() {
   // Sample list of projects
@@ -72,6 +73,7 @@ export default function Home() {
     <main className="fadeIn min-h-screen bg-gray-100 ">
       <div className=" bg-gray-100">
         <Navbar />
+        <NavbarSm />
         <SearchBar projects={projects} />
       </div>
     </main>
