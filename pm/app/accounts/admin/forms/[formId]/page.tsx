@@ -4,7 +4,8 @@ import Link from "next/link"
 import React, { useState, useEffect } from "react";
 
 import { Badge } from "@/components/ui/badge"
-
+import Loading from "../../loading";
+import { Suspense } from "react";
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -48,6 +49,7 @@ export default function form() {
     
     addQuestion();
   }, []);
+
   return (
     <div className="flex min-h-screen w-full flex-col">
       <div className="flex flex-col">

@@ -82,7 +82,7 @@ export default function Dashboard() {
           </Card>
           <Card x-chunk="dashboard-01-chunk-2">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Reports Submitted</CardTitle>
+              <CardTitle className="text-sm font-medium">Forms Submitted</CardTitle>
               <CreditCard className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
@@ -111,9 +111,9 @@ export default function Dashboard() {
           >
             <CardHeader className="flex flex-row items-center">
               <div className="grid gap-2">
-                <CardTitle>Reports</CardTitle>
+                <CardTitle>Forms</CardTitle>
                 <CardDescription>
-                  Recent submitted reports from your users.
+                  Recent submitted forms from your users.
                 </CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
