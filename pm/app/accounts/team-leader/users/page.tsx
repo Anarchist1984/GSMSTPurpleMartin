@@ -304,7 +304,7 @@ export default function Dashboard() {
                           />
                         </TableCell>
                         <TableCell className="font-medium">
-                          Martin's Saviors
+                          Martin&apos;s Saviors
                         </TableCell>
                         <TableCell>
                           <Badge variant="outline">Approved</Badge>
@@ -358,9 +358,8 @@ export default function Dashboard() {
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </AlertDialogDescription>
+  This action cannot be undone. This will permanently delete the user&apos;s account and remove their data from the servers.
+</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel onClick={handleCancelDelete}>Cancel</AlertDialogCancel>

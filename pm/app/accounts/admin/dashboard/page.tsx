@@ -132,7 +132,7 @@ export default function Dashboard() {
       </TableCell>
       <TableCell className="hidden sm:table-cell">
         <Badge className="text-xs" variant="outline">
-          Martin's Saviors
+          Martin&apos;s Saviors
         </Badge>
       </TableCell>
       <TableCell className="">A Form was Here</TableCell>

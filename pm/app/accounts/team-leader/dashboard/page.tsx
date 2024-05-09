@@ -99,8 +99,8 @@ export default function Dashboard() {
               <div className="grid gap-2">
                 <CardTitle>Forms</CardTitle>
                 <CardDescription>
-                  Recently submitted forms from your team.
-                </CardDescription>
+  Recently submitted forms from your team.
+</CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
                 <Link href="/dashboard/admin/forms">
@@ -132,7 +132,7 @@ export default function Dashboard() {
       </TableCell>
       <TableCell className="hidden sm:table-cell">
         <Badge className="text-xs" variant="outline">
-          Martin's Saviors
+          Martin&apos;s Saviors
         </Badge>
       </TableCell>
       <TableCell className="">A Form was Here</TableCell>

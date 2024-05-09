@@ -16,7 +16,7 @@ export default function SignIn() {
             <div className="grid gap-2 text-center">
               <h1 className="text-3xl font-bold">Pending Approval</h1>
               <p className="text-balance text-muted-foreground">
-                Hey there looks like you haven't been approved yet, check back later or ask your administrator to approve you
+                Hey there looks like you haven&apos;t been approved yet, check back later or ask your administrator to approve you
               </p>
             </div>
             <div className="grid gap-4">

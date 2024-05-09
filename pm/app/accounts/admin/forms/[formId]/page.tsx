@@ -38,12 +38,12 @@ export default function Form() {
         const formRef = doc(db, "forms", search);
         // Collect form data
         const formData = {
-          name: document.getElementById("name").value,
-          description: document.getElementById("description").value,
+          name: (document.getElementById("name") as HTMLInputElement)?.value || "",
+          description: (document.getElementById("description") as HTMLInputElement)?.value || "",
           questions: questions.map((question, index) => ({
             id: index + 1,
-            question: document.getElementById(`question_${index}`).value,
-            inputType: document.getElementById(`input_type_${index}`).value,
+            question: (document.getElementById(`question_${index}`) as HTMLInputElement)?.value || "",
+            inputType: (document.getElementById(`input_type_${index}`) as HTMLInputElement)?.value || "",
           })),
           status: status, // Update status
         };
