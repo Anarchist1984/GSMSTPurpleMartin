@@ -71,7 +71,7 @@ export default function FormDashboard() {
       });
       const formId = docRef.id; // Get the ID of the newly created document
       // Redirecting to a new URL with the form ID included as a parameter
-      router.push(`/accounts/admin/forms/form?search=${formId}`);
+      router.push(`/accounts/team-leader/forms/form?search=${formId}`);
     } catch (error) {
       console.error('Error creating form:', error);
       alert('An error occurred while creating the form. Please try again.');
@@ -184,7 +184,7 @@ export default function FormDashboard() {
                   <CardHeader className="px-7">
                     <CardTitle>Forms</CardTitle>
                     <CardDescription>
-                      Recently submitted forms from your users.
+                      Recently submitted forms from your team.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -239,7 +239,7 @@ export default function FormDashboard() {
                   <CardHeader className="px-7">
                     <CardTitle>Forms</CardTitle>
                     <CardDescription>
-                      Submitted forms from this month
+                      Submitted forms from this month from your team
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -294,7 +294,7 @@ export default function FormDashboard() {
                   <CardHeader className="px-7">
                     <CardTitle>Forms</CardTitle>
                     <CardDescription>
-                      Submitted forms from this year.
+                      Submitted forms from this year from your team.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -377,9 +377,9 @@ export default function FormDashboard() {
         <TooltipProvider key={form.id}>
           <Tooltip>
               <TableRow>
-                <TableCell><TooltipTrigger><Link href={`/accounts/admin/forms/form?search=${form.id}`}>{form.name}</Link></TooltipTrigger></TableCell>
+                <TableCell><TooltipTrigger><Link href={`/accounts/team-leader/forms/form?search=${form.id}`}>{form.name}</Link></TooltipTrigger></TableCell>
                 <TableCell className="hidden sm:table-cell"><TooltipTrigger>
-                <Link href={`/accounts/admin/forms/form?search=${form.id}`}>
+                <Link href={`/accounts/team-leader/forms/form?search=${form.id}`}>
                   <div className="font-medium">{form.author}</div>
                   <div className="hidden text-sm text-muted-foreground md:inline">
                     {form.email}
@@ -390,7 +390,7 @@ export default function FormDashboard() {
                 </TableCell>
                 <TableCell className="hidden sm:table-cell">
                   <TooltipTrigger>
-                  <Link href={`/accounts/admin/forms/form?search=${form.id}`}>
+                  <Link href={`/accounts/team-leader/forms/form?search=${form.id}`}>
                   <Badge className="text-xs" variant="secondary">
                     {form.status}
                   </Badge>
@@ -399,7 +399,7 @@ export default function FormDashboard() {
                 </TableCell>
                 <TableCell className="hidden md:table-cell">
                   <TooltipTrigger>
-                  <Link href={`/accounts/admin/forms/form?search=${form.id}`}>
+                  <Link href={`/accounts/team-leader/forms/form?search=${form.id}`}>
                   {form.created}
                   </Link>
                   </TooltipTrigger>

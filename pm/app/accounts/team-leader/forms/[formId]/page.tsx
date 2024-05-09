@@ -79,7 +79,7 @@ export default function Form() {
           <div className="mx-auto grid max-w-[59rem] flex-1 auto-rows-max gap-4">
             <div className="flex items-center gap-4">
               <Button variant="outline" size="icon" className="h-7 w-7">
-                <Link href="/accounts/admin/forms">
+                <Link href="/accounts/team-leader/forms">
                   <ChevronLeft className="h-4 w-4" />
                   <span className="sr-only">Back</span>
                 </Link>
@@ -104,13 +104,13 @@ export default function Form() {
                     <div className="grid gap-6">
                       <div className="grid gap-3">
                         <Label htmlFor="name">Name</Label>
-                        <Input id="name" type="text" className="w-full" defaultValue="Gamer Gear Pro Controller" />
+                        <Input id="name" type="text" className="w-full" defaultValue="A Title Goes Here" />
                       </div>
                       <div className="grid gap-3">
                         <Label htmlFor="description">Description</Label>
                         <Textarea
                           id="description"
-                          defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec ultricies ultricies, nunc nisl ultricies nunc, nec ultricies nunc nisl nec nunc."
+                          defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                           className="min-h-32"
                         />
                       </div>
@@ -205,7 +205,7 @@ export default function Form() {
                 <Card className="overflow-hidden">
                   <CardHeader>
                     <CardTitle>Assign</CardTitle>
-                    <CardDescription>Assign this form to specific teams</CardDescription>
+                    <CardDescription>Assign this form to specific users</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="relative ml-auto flex-1 md:grow-0">

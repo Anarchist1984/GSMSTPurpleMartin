@@ -51,46 +51,7 @@ export default function Dashboard() {
     <div className="flex min-h-screen w-full flex-col">
      
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
-        <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
-          <Card x-chunk="dashboard-01-chunk-1">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Users
-              </CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">+2350</div>
-              <p className="text-xs text-muted-foreground">
-                +180.1% from last month
-              </p>
-            </CardContent>
-          </Card>
-          <Card x-chunk="dashboard-01-chunk-2">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Forms Submitted</CardTitle>
-              <CreditCard className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">+12,234</div>
-              <p className="text-xs text-muted-foreground">
-                +19% from last month
-              </p>
-            </CardContent>
-          </Card>
-          <Card x-chunk="dashboard-01-chunk-3">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Active Now</CardTitle>
-              <Activity className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">+573</div>
-              <p className="text-xs text-muted-foreground">
-                +201 since last hour
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+        
         <div className="grid gap-4 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
           <Card
             className="xl:col-span-2" x-chunk="dashboard-01-chunk-4"
@@ -99,7 +60,7 @@ export default function Dashboard() {
               <div className="grid gap-2">
                 <CardTitle>Forms</CardTitle>
                 <CardDescription>
-                  Recently submitted forms from your users.
+                  Forms you still need to submit
                 </CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
@@ -113,29 +74,31 @@ export default function Dashboard() {
             <Table>
   <TableHeader>
     <TableRow className="hidden sm:table-row">
-      <TableHead className="hidden sm:table-cell">Customer</TableHead>
-      <TableHead className="hidden sm:table-cell">Date</TableHead>
-      <TableHead className="hidden sm:table-cell">Teams</TableHead>
       <TableHead className="hidden sm:table-cell">Form</TableHead>
+      <TableHead className="hidden sm:table-cell">Due Date</TableHead>
+      <TableHead className="hidden sm:table-cell">Assigned To</TableHead>
+      
     </TableRow>
   </TableHeader>
   <TableBody>
     <TableRow>
       <TableCell>
-        <div className="font-medium">Liam Johnson</div>
-        <div className="hidden text-sm text-muted-foreground sm:inline">
-          liam@example.com
-        </div>
+        <div className="font-medium">PM Initial Survey</div>
       </TableCell>
       <TableCell className="hidden sm:table-cell">
         09-25-2024
       </TableCell>
       <TableCell className="hidden sm:table-cell">
         <Badge className="text-xs" variant="outline">
-          Martin's Saviors
+          George Mathew
+        </Badge>
+        <Badge className="text-xs" variant="outline">
+          Valentina Munoz-Baccadre
+        </Badge>
+        <Badge className="text-xs" variant="outline">
+          Pritika Yadav
         </Badge>
       </TableCell>
-      <TableCell className="">A Form was Here</TableCell>
     </TableRow>
   </TableBody>
 </Table>
@@ -144,7 +107,7 @@ export default function Dashboard() {
           </Card>
           <Card x-chunk="dashboard-01-chunk-5">
             <CardHeader>
-              <CardTitle>Recently Active</CardTitle>
+              <CardTitle>Your Recently Active Teamates</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-8">
               <div className="flex items-center gap-4">

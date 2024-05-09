@@ -266,9 +266,9 @@ export default function Dashboard() {
             <TabsContent value="team">
               <Card x-chunk="dashboard-06-chunk-0">
                 <CardHeader>
-                  <CardTitle>Teams</CardTitle>
+                  <CardTitle>Other Team</CardTitle>
                   <CardDescription>
-                    Manage teams in your organization
+                    See other teams in your organization
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -286,9 +286,7 @@ export default function Dashboard() {
                         <TableHead className="hidden md:table-cell">
                           Team Leader
                         </TableHead>
-                        <TableHead className="hidden md:table-cell">
-                          Created at
-                        </TableHead>
+                        
                         <TableHead>
                           <span className="sr-only">Actions</span>
                         </TableHead>
@@ -320,9 +318,7 @@ export default function Dashboard() {
                           <Badge variant="outline">George Mathew</Badge>
                           
                         </TableCell>
-                        <TableCell className="hidden md:table-cell">
-                          2023-07-12 10:42 AM
-                        </TableCell>
+                        
                         <TableCell>
                           <DropdownMenu>
                             <DropdownMenuTrigger asChild>

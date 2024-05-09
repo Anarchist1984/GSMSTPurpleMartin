@@ -34,7 +34,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-export default function AdminLayout({
+export default function TeamLeaderLayout({
     children, // will be a page or nested layout
   }: {
     children: React.ReactNode
@@ -54,7 +54,7 @@ export default function AdminLayout({
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="/accounts/admin/dashboard"
+                href="/accounts/team-leader/dashboard"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <Home className="h-5 w-5" />
@@ -68,7 +68,7 @@ export default function AdminLayout({
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="/accounts/admin/forms"
+                href="/accounts/team-leader/forms"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <ScrollText className="h-5 w-5" />
@@ -82,7 +82,7 @@ export default function AdminLayout({
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="/accounts/admin/users"
+                href="/accounts/team-leader/users"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <Users2 className="h-5 w-5" />
@@ -96,7 +96,7 @@ export default function AdminLayout({
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="/accounts/admin/analytics"
+                href="/accounts/team-leader/analytics"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <LineChart className="h-5 w-5" />
@@ -112,7 +112,7 @@ export default function AdminLayout({
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="/accounts/admin/settings"
+                href="/accounts/team-leader/settings"
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <Settings className="h-5 w-5" />
@@ -143,28 +143,28 @@ export default function AdminLayout({
                   <span className="sr-only">The Purple Martin Project</span>
                 </Link>
                 <Link
-                  href="/accounts/admin/dashboard"
+                  href="/accounts/team-leader/dashboard"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <Home className="h-5 w-5" />
                   Dashboard
                 </Link>
                 <Link
-                  href="/accounts/admin/forms"
+                  href="/accounts/team-leader/forms"
                   className="flex items-center gap-4 px-2.5 text-foreground"
                 >
                   <ScrollText className="h-5 w-5" />
                   Forms
                 </Link>
                 <Link
-                  href="/accounts/admin/users"
+                  href="/accounts/team-leader/users"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <Users2 className="h-5 w-5" />
                   Users
                 </Link>
                 <Link
-                  href="/accounts/admin/settings"
+                  href="/accounts/team-leader/settings"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <LineChart className="h-5 w-5" />
@@ -194,7 +194,7 @@ export default function AdminLayout({
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>My Account</DropdownMenuLabel> 
               <DropdownMenuSeparator />
-              <DropdownMenuItem><Link href="accounts/admin/settings">Settings</Link></DropdownMenuItem>
+              <DropdownMenuItem><Link href="accounts/team-leader/settings">Settings</Link></DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Logout</DropdownMenuItem>

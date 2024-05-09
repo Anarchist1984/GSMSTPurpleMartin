@@ -60,9 +60,9 @@ export default function Dashboard() {
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+2350</div>
+              <div className="text-2xl font-bold">+5</div>
               <p className="text-xs text-muted-foreground">
-                +180.1% from last month
+                +50.2% from last month
               </p>
             </CardContent>
           </Card>
@@ -72,7 +72,7 @@ export default function Dashboard() {
               <CreditCard className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+12,234</div>
+              <div className="text-2xl font-bold">+20</div>
               <p className="text-xs text-muted-foreground">
                 +19% from last month
               </p>
@@ -84,9 +84,9 @@ export default function Dashboard() {
               <Activity className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">+573</div>
+              <div className="text-2xl font-bold">+6</div>
               <p className="text-xs text-muted-foreground">
-                +201 since last hour
+                +2 since last hour
               </p>
             </CardContent>
           </Card>
@@ -99,7 +99,7 @@ export default function Dashboard() {
               <div className="grid gap-2">
                 <CardTitle>Forms</CardTitle>
                 <CardDescription>
-                  Recently submitted forms from your users.
+                  Recently submitted forms from your team.
                 </CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
@@ -144,7 +144,7 @@ export default function Dashboard() {
           </Card>
           <Card x-chunk="dashboard-01-chunk-5">
             <CardHeader>
-              <CardTitle>Recently Active</CardTitle>
+              <CardTitle>Recently Active in Your Team</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-8">
               <div className="flex items-center gap-4">
