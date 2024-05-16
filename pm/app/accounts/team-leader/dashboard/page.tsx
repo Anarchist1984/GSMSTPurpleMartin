@@ -103,7 +103,7 @@ export default function Dashboard() {
 </CardDescription>
               </div>
               <Button asChild size="sm" className="ml-auto gap-1">
-                <Link href="/dashboard/admin/forms">
+                <Link href="/dashboard/team-leader/forms">
                   View All
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>

@@ -68,7 +68,7 @@ export default function Form() {
   }, []);
 
   // Function to handle status change
-  const handleStatusChange = (newStatus) => {
+  const handleStatusChange = (newStatus:string) => {
     setStatus(newStatus);
   };
 
