@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Welcome to the Purple Martins Monitoring App repository! This application is designed to facilitate the logging of information related to Purple Martins by users, and streamline the process of monitoring and data collection for administrators. The app aims to support conservation efforts by making it easier to track and manage data on Purple Martin populations.
+Welcome to the Purple Martins Monitoring App repository! This application is designed to facilitate the logging of information related to Purple Martins by users and streamline the process of monitoring and data collection for administrators. The app aims to support conservation efforts by making it easier to track and manage data on Purple Martin populations.
 
 ## Features
 
 - **User Accounts:** Users can create accounts and log in to access the app's features.
-- **Data Logging:** Users can log various types of information including sightings, nest status, and other relevant data.
-- **Admin Dashboard:** Administrators have access to a dashboard where they can view, manage, and analyze the data submitted by users and create forms for the collection of such data
+- **Data Logging:** Users can log various types of information, including sightings, nest status, and other relevant data.
+- **Admin Dashboard:** Administrators have access to a dashboard where they can view, manage, and analyze the data submitted by users and create forms for data collection.
 - **Reports:** Generate reports to summarize data for specific periods or regions.
 
 ## Installation
@@ -27,27 +27,24 @@ To run this app locally, follow these steps:
    npm install
    ```
 
-3. **Set up the database:**
-   Ensure that you have a firebase env file set up with this configuration 
-   ```bash
-   const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
-};
-```
+3. **Set up the Firebase configuration:**
+   Create a `.env` file in the root directory of your project and add the following environment variables:
+   ```plaintext
+   REACT_APP_FIREBASE_API_KEY=your-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-app-id
+   REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
+   ```
 
-
-5. **Start the application:**
+4. **Start the application:**
    ```bash
    npm run dev
    ```
 
-6. **Access the application:**
+5. **Access the application:**
    Open your browser and go to `http://localhost:3000`.
 
 ## Usage
@@ -56,24 +53,23 @@ To run this app locally, follow these steps:
 
 1. **Sign Up / Login:**
    Create a new account or log in with your existing credentials.
-   
-2. **Follow this**
-   Follow this for a more structured walkthrough:
-   https://guidejar.com/guides/a91b5d23-bea5-4dc7-9730-17acdd9f60f1
+
+2. **Follow the structured walkthrough:**
+   For a more detailed guide, visit: [User Walkthrough](https://guidejar.com/guides/a91b5d23-bea5-4dc7-9730-17acdd9f60f1)
 
 ### Admin Guide / Team Leader
 
 1. **Admin Dashboard:**
    Access the admin or team leader dashboard to view all user-submitted data.
 
-2. **Admin**
+2. **Admin Tasks:**
    Administrators can filter, sort, and export data for further analysis.
 
-3. **Team Leader**
-   Team leader's can only manage data for the team they are assigned to 
+3. **Team Leader Tasks:**
+   Team leaders can only manage data for the team they are assigned to.
 
-4. **Walkthrough**
-    https://guidejar.com/guides/9c9adb58-0d9b-49b3-abcf-8d6308a22557
+4. **Admin Walkthrough:**
+   For a detailed guide, visit: [Admin Walkthrough](https://guidejar.com/guides/9c9adb58-0d9b-49b3-abcf-8d6308a22557)
 
 ## Contributing
 
@@ -84,7 +80,6 @@ We welcome contributions to the Purple Martins Monitoring App! To contribute, pl
 3. Make your changes and commit them (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a pull request.
-
 
 ## License
 
